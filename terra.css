@@ -22,6 +22,7 @@ header {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #A0A1B769;
+  width: 100%;
 }
 
 nav, ul, li{
@@ -50,17 +51,19 @@ span {
 main {
   display: flex;
   font-family: Arial, Helvetica, sans-serif;
+  justify-content: space-between;
 }
 
 .imagem img{
   width: 30rem;
-  margin: 2rem;
+  /*margin: 2rem;*/
 }
 
 section.texto {
   color: white;
   width: 22rem;
   margin-top: 7rem;
+  margin-right: 5rem;
   line-height: 1.5rem;
 }
 
@@ -90,7 +93,7 @@ div.visualizar {
   position: absolute;
   color: white;
   margin-top: 22rem;
-  margin-left: 33rem;
+  margin-left: 54.5vw;
 }
 
 div.visualizar > #um, #dois, #tres {
