@@ -40,7 +40,7 @@ function clicarDois() {
   document.getElementById('Terra').style.margin = margem+"%"
   document.getElementById('Terra').style.marginLeft = 15+"%"
   document.getElementById('Terra').style.marginRight = 10+"%"
-  document.querySelector('section.texto').style.width = 22+"rem"
+  document.querySelector('section.texto').style.width = 38+"%"
   p.innerText = 'A estrutura interna da Terra é constituída por três camadas: crosta terrestre - camada superficial sólida que envolve a Terra. Tem, em média, de 30 a 40 km de espessura, mas pode ser bem mais fina ou chegar a até 80km. Possui duas partes: forma de relevo e estruturas geológicas.'
   
 
