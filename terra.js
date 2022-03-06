@@ -24,7 +24,7 @@ function clicarUm() {
   document.getElementById('Terra').src = 'terra.png';
   document.getElementById('Terra').style.width = altura+"%"
   document.getElementById('Terra').style.margin = margem+"%"
-  document.querySelector('section.texto').style.width = 44+"%"
+  document.querySelector('section.texto').style.width = 39+"%"
   p.innerText = 'Terceiro planeta a partir do Sol e o único planeta conhecido a abrigar vida. Cerca de 29,2% da superfície da Terra é terra e os restantes 70,8% são cobertos por água. A distância da Terra ao Sol, as propriedades físicas e a história geológica permitiram que a vida evoluísse e prosperasse.'
 }
 function sairUm() {
@@ -56,7 +56,7 @@ function clicarTres() {
   document.getElementById('Terra').src = 'terra.png'
   document.getElementById('Terra').style.width = altura+"%"
   document.getElementById('Terra').style.margin = margem+"%"
-  document.querySelector('section.texto').style.width = 44+"%"
+  document.querySelector('section.texto').style.width = 39+"%"
   p.innerText = 'As estruturas geológicas representam as formações rochosas e as distintas gêneses do relevo terrestre. São subdivididas em crátons, bacias sedimentares e dobramentos modernos. Também chamadas de províncias geológicas – são as formações rochosas e estruturais que compõem a litosfera terrestre.'
 }
 function sairTres() {
