@@ -2,6 +2,7 @@ First = document.getElementById('um');
 Second = document.getElementById('dois');
 Third = document.getElementById('tres');
 
+
 p = document.querySelector('p');
 image = document.querySelector('img');
 
