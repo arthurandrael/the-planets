@@ -62,3 +62,4 @@ function clicarTres() {
 function sairTres() {
   Third.style.background = 'none';
 }
+
