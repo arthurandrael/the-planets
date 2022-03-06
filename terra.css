@@ -12,7 +12,8 @@
 
 
 body {
-  background: #070625 url('fundo.jpeg')
+  background: #070625 url('fundo.jpeg');
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
