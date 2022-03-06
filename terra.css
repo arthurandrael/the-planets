@@ -136,7 +136,7 @@ div.dados {
 }
 
 .dados div {
-  width: 9rem;
+  width: 15vw;
   border: 1px solid #A0A1B769;
   padding: 1rem 2rem 1rem 1rem;
   text-align: left;
@@ -151,5 +151,6 @@ div.dados {
 
 .dados span {
   margin: 0;
+  font-size: 3.0vw;
 }
 
