@@ -12,7 +12,8 @@
 
 
 body {
-  background: #070625 url('fundo.jpeg');
+  background: #070625 url('fundo.jpeg') top center no-repeat;
+  background-size: cover;
   font-family: Arial, Helvetica, sans-serif;
 }
 
