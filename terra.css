@@ -59,6 +59,10 @@ main {
   /*margin: 2rem;*/
 }
 
+section {
+  justify-content: space-between;
+}
+
 section.texto {
   color: white;
   width: 22rem;
@@ -92,8 +96,8 @@ div.visualizar {
   height: 15rem;
   position: absolute;
   color: white;
-  margin-top: 22rem;
-  margin-left: 54.5vw;
+  /*margin-top: 22rem;*/
+  margin-left: -1rem;
 }
 
 div.visualizar > #um, #dois, #tres {
@@ -117,7 +121,8 @@ div.visualizar > #um, #dois, #tres {
 div.dados {
   color: white;
   display: flex;
-  margin-top: 10rem;
+  margin-top: 12rem;
+ justify-content: space-between;
 }
 
 .dados div {
@@ -125,7 +130,7 @@ div.dados {
   border: 1px solid #A0A1B769;
   padding: 1rem 2rem 1rem 1rem;
   text-align: left;
-  margin: 1rem; 
+  margin: 1rem;
 }
 
 .dados small {

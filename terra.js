@@ -19,7 +19,7 @@ Third.addEventListener('mouseout', sairTres)
 
 function clicarUm() {
   var altura = 30
-  var margem = 2
+  var margem = 0
   First.style.background = '#6732D9';
   document.getElementById('Terra').src = 'terra.png';
   document.getElementById('Terra').style.width = altura+"rem"
@@ -32,7 +32,7 @@ function sairUm() {
 
 function clicarDois() {
   var altura = 21
-  var margem = 4
+  var margem = 2
   Second.style.background = '#6732D9';
   document.getElementById('Terra').src = 'terra2.png'
   document.getElementById('Terra').style.width = altura+"rem";
@@ -48,11 +48,11 @@ function sairDois() {
 }
 
 function clicarTres() {
-  var altura = 30
+  var altura = 80
   var margem = 2
   Third.style.background = '#6732D9';
   document.getElementById('Terra').src = 'terra.png'
-  document.getElementById('Terra').style.width = altura+"rem"
+  document.getElementById('Terra').style.width = altura+"%"
   document.getElementById('Terra').style.margin = margem+"rem"
   p.innerText = 'As estruturas geológicas representam as formações rochosas e as distintas gêneses do relevo terrestre. São subdivididas em crátons, bacias sedimentares e dobramentos modernos. Também chamadas de províncias geológicas – são as formações rochosas e estruturais que compõem a litosfera terrestre.'
 }
