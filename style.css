@@ -188,7 +188,7 @@ div.dados {
 
 
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 640px) {
   
   body {
     width: 100%;
