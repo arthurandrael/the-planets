@@ -19,7 +19,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-@media (min-width: 780px) and (max-width: 1366px) {
+@media (min-width: 600px) and (max-width: 1366px) {
 header {
   color: white;
   display: flex;
@@ -171,7 +171,7 @@ div.dados {
 
 
 
-@media (min-width: 481px) and (max-width: 768){
+@media (min-width: 481px) and (max-width: 768px){
   @import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
   
   
@@ -188,7 +188,7 @@ div.dados {
 
 
 
-@media (min-width: 320px) and (max-width: 640px) {
+@media (min-width: 320px) and (max-width: 480px) {
   
   body {
     width: 100%;
