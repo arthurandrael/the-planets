@@ -4,16 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="terra.css">
+  <link rel="stylesheet" href="style.css">
   <title>EARTH</title>
 </head>
 
 <body>
   <header>
     <span>THE PLANETS</span>
+    
+    <input type="checkbox" id="check"><label id="Menu-simb" for="check"><img src="Menu-Simbolo.jpg" alt="Menu"></label>
     <nav>
       <ul>
-        <li><a href="#">Mercúrio</a></li>
+        <li><a href="mercurio.html">Mercúrio</a></li>
         <li><a href="#">Vênus</a></li>
         <li><a href="#">Terra</a></li>
         <li><a href="#">Marte</a></li>
@@ -23,7 +25,23 @@
         <li><a href="#">Netuno</a></li>
       </ul>
     </nav>
+    
+    
+    
   </header>
+  <section>
+    <div class="visualizar">
+      <div id="um">
+        <span class="num">01</span>Visão Geral
+      </div>
+      <div id="dois">
+        <span class="num">02</span>Estrutura Interna
+      </div>
+      <div id="tres">
+        <span class="num">03</span>Superfície Geológica
+      </div>
+    </div>
+  </section>
   
   
   <main>
@@ -32,24 +50,14 @@
     </div>
     
     <section class="texto" id="TerraTxT">
-      <h1>TERRA</h1>
+      <h1 id="Titulo">TERRA</h1>
       <p>Terceiro planeta a partir do Sol e o único planeta conhecido a abrigar vida. Cerca de 29,2% da superfície da Terra é terra e os restantes 70,8% são cobertos por água. A distância da Terra ao Sol, as propriedades físicas e a história geológica permitiram que a vida evoluísse e prosperasse.</p>
       
       <span id="fonte">Source: <a href="">Wikipedia</a></span>
       
       
       
-      <div class="visualizar">
-        <div id="um">
-          <span class="num">01</span>Visão Geral
-        </div>
-        <div id="dois">
-          <span class="num">02</span>Estrutura Interna
-        </div>
-        <div id="tres">
-          <span class="num">03</span>Superfície Geológica
-        </div>
-      </div>
+      
     </section>
     
     
@@ -57,28 +65,30 @@
   </main>
   
   
-  <div class="dados">
-    <div>
+  <section class="Dados">
+  <div class="dados" id="dado">
+    <div id="dado1">
       <small>ROTATION TIME</small><br>
-      <span>0.99 DAYS</span>
+      <span id="d1">0.99 DAYS</span>
     </div>
-    <div>
+    <div id="dado2">
       <small>REVOLUTION TIME</small><br>
-      <span>365.26 DAYS</span>
+      <span id="d2">365.26 DAYS</span>
     </div>
-    <div>
+    <div id="dado3">
       <small>RADIUS</small><br>
-      <span>6,371 KM</span>
+      <span id="d3">6,371 KM</span>
     </div>
-    <div>
+    <div id="dado4">
       <small>AVERAGE TEMP</small><br>
-      <span>16°C</span>
+      <span id="d4">16°C</span>
     </div>
   </div>
+  </section>
   
   
   
-  <script src="terra.js"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>

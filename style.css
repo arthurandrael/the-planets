@@ -1,0 +1,357 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+
+@import url('https://fonts.googleapis.com/css2? família= Oswald:wght@300 & display=swap');
+
+* {
+  margin: 0; padding: 0;
+}
+
+
+body {
+  width: 100vw;
+  height: 200%;
+  background: #070625 url('fundo.jpeg') top center repeat;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (min-width: 780px) and (max-width: 1366px) {
+header {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #A0A1B769;
+  width: 100%;
+}
+
+#Menu-simb {
+  display: none;
+}
+
+nav, ul, li{
+  list-style: none;
+  display: flex;
+  font-size: 1.31vw;
+  /*font-size: 0.8rem;*/
+  color: white;
+  text-decoration: none;
+  margin: 0.6rem 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+span {
+  font-size: 3.5vw;
+  margin: 1rem 0rem 1rem 1.3rem;
+  align-items: center;
+  font-family: 'Teko', sans-serif;
+}
+
+main {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: space-around;
+}
+
+.imagem img{
+  /*width: 50vw;*/
+  width: 80%;
+  margin: 2%;
+}
+
+section {
+  justify-content: space-between;
+}
+
+section.texto {
+  color: white;
+  width: 39%;
+  margin-top: 5rem;
+  margin-right: 5%;
+  line-height: 1.8vw;
+}
+
+h1 {
+  font-size: 3vmax;
+  padding-bottom: 2rem;
+  font-family: 'Teko', sans-serif;
+  letter-spacing: 0.2rem;
+}
+
+p {
+  font-size: 1.3vw;
+}
+
+span#fonte {
+  font-size: 1vw;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #7248AE;
+  margin: 2.5rem 2rem 2.5rem 0rem;
+  
+}
+
+#fonte a {
+  color: #B4B3B5;
+  margin-left: 0.3rem;
+}
+
+#check {
+  display: none;
+}
+
+div.visualizar {
+  /*width: 24rem;
+  height: 15rem;*/
+  width: 39vw;
+  height: 20vh;
+  position: absolute;
+  color: white;
+  /*margin-top: 22rem;*/
+  margin-left: 58%;
+  margin-top: 25%;
+}
+
+div.visualizar > #um, #dois, #tres {
+  border: 1px solid #A0A1B769;
+  font-size: 1.15vw;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  padding: 0.8rem 0rem;
+  margin: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.num {
+  padding-right: 1.5rem;
+  font-size: 1.15vw;
+  font-family: Arial, sans-serif;
+  color: #B4B3B5;
+}
+
+div.dados {
+  color: white;
+  display: flex;
+  margin-top: 8vw;
+  justify-content: space-around;
+  position: absolute;
+}
+
+.dados div {
+  width: 16vw;
+  border: 1px solid #A0A1B769;
+  padding: 1rem 2rem 1rem 1rem;
+  text-align: left;
+  margin: 1rem 1rem;
+}
+
+.dados small {
+  font-size: 0.5rem;
+  letter-spacing: 0.1vmax;
+  color: #B4B3B5;
+}
+
+.dados span {
+  margin: 0;
+  font-size: 2rem;
+  
+}
+}
+
+
+
+
+
+@media (min-width: 481px) and (max-width: 768){
+  @import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+  
+  
+  header {
+    flex-wrap: wrap;
+  }
+  
+  header span {
+    text-align: center;
+  }
+}
+
+
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  body {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  header {
+    color: white;
+    display: flex;
+    border-bottom: 1px solid #A0A1B769;
+    width: 100%;
+  }
+  
+  header span {
+    font-size: 9vw;
+    margin: 0.5rem 1.5rem;
+    font-family: 'Teko', sans-serif;
+  }
+  
+  
+  
+  div.visualizar {
+    color: white;
+    display: flex;
+    position: absolute;
+    font-size: 0.6rem;
+    border-bottom: 1.5px solid #A0A1B769;
+  }
+  
+  div.visualizar > #um, #dois, #tres {
+    width: 6.9rem;
+    padding: 0.85rem 0.3rem;
+    text-align: center;
+    }
+    
+  
+  .imagem img {
+    /*width: 50vw;*/
+    width: 80%;
+    margin: 2%;
+    margin-left: 9.5%;
+    margin-top: 20%;
+    margin-bottom: 10%;
+  }
+  
+  #Menu-simb {
+    background-color: black;
+    border: none;
+    position: absolute;
+    margin-left: 85%;
+    margin-top: 4.3%;
+    z-index: 2;
+  }
+  
+  #Menu-simb img {
+    width: 1.8rem;
+    z-index: 2;
+  }
+  
+  #check {
+    position: absolute;
+    margin-left: 85%;
+    margin-top: 5%;
+    z-index: 2;
+  }
+  
+  #check:checked ~ nav{
+    position: absolute;
+    display: block;
+    list-style: none;
+    background-color: #070625;
+    z-index: 1;
+    margin-left: 27%;
+    padding: 2.5%;
+    width: 68%;
+    text-align: center;
+    padding-top: 18%;
+    height: 100vh;
+  }
+  
+  #check:checked ~ nav a {
+    color: white;
+    text-decoration: none;
+    /*line-height: 2.8rem;*/
+  }
+  
+  #check:checked ~ ul, li {
+    list-style: none;
+    padding: 1rem;
+  }
+  
+  #check:checked ~ nav a:hover {
+    text-decoration: underline;
+    font-size: 1.15rem;
+  }
+  
+  nav {
+    display: none;
+  }
+
+  .num {
+    display: none;
+  }
+  
+  h1 {
+    color: white;
+    font-family: 'Teko', sans-serif;
+    font-size: 2.5rem;
+    font-weight: lighter;
+    text-align: center;
+  }
+  
+  p {
+    color: white;
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    font-size: 0.78rem;
+    line-height: 1.3rem;
+    letter-spacing: 0.02rem; 
+  }
+
+  
+  span#fonte, #fonte a {
+    color: white;
+    font-size: 0.8rem;
+    margin: 0%;
+  }
+  
+  div.dados {
+    color: white;
+    margin-top: 8vw;
+    justify-content: space-around;
+    position: absolute;
+  }
+  
+  .dados div {
+    display: flex;
+    width: 77vw;
+    height: 10%;
+    border: 1px solid #A0A1B769;
+    padding: 0.3rem 2rem 0.3rem 1rem;
+    text-align: justify;
+    margin: 1rem 1rem;
+  }
+  
+  .dados small {
+    font-size: 0.8vmax;
+    letter-spacing: 0.1vmax;
+    color: #B4B3B5;
+    margin: 1rem 0rem;
+  }
+  
+  .dados span {
+    position: absolute;
+    margin: 0.3rem 0rem 0.3rem 1rem;
+    font-size: 1.5rem;
+    margin-left: 50%;
+    font-family: 'Teko', sans-serif;
+  }
+  
+  #d1 {margin-left: 61%;}
+  #d2 {margin-left: 56%;}
+  #d3 {margin-left: 63%;}
+  #d4 {margin-left: 70%;}
+}

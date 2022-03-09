@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>MERCURY</title>
+  
+  <style>
+  @media (max-width: 780px) {
+    #d2 {
+      margin-left: 64%; 
+    }
+    #d3 {margin-left: 59.5%;}
+    #d4 {margin-left: 68.5%;}
+    }
+    
+  @media (min-width: 780px) and (max-width: 1366px) {
+    #Terra {
+      margin: 2%;
+      margin-top: 11%;
+      margin-bottom: 5%;
+    }
+  }
+  </style>
+</head>
+
+<body>
+  <header>
+    <span>THE PLANETS</span>
+  
+    <input type="checkbox" id="check"><label id="Menu-simb" for="check"><img src="Menu-Simbolo.jpg" alt="Menu"></label>
+    <nav>
+      <ul>
+        <li><a href="mercurio.html">Mercúrio</a></li>
+        <li><a href="venus.html">Vênus</a></li>
+        <li><a href="index.html">Terra</a></li>
+        <li><a href="marte.html">Marte</a></li>
+        <li><a href="jupiter.html">Júpiter</a></li>
+        <li><a href="saturno.html">Saturno</a></li>
+        <li><a href="urano.html">Urano</a></li>
+        <li><a href="netuno.html">Netuno</a></li>
+      </ul>
+    </nav>
+  
+  
+  
+  </header>
+  <section>
+    <div class="visualizar">
+      <div id="um">
+        <span class="num">01</span>Visão Geral
+      </div>
+      <div id="dois">
+        <span class="num">02</span>Estrutura Interna
+      </div>
+      <div id="tres">
+        <span class="num">03</span>Superfície Geológica
+      </div>
+    </div>
+  </section>
+  
+  
+  <main>
+    <div class="imagem">
+      <img src="planetas/mercurio.png" alt="Mercurio" id="Terra">
+    </div>
+  
+    <section class="texto" id="TerraTxT">
+      <h1 id="Titulo">MERCÚRIO</h1>
+      <p>Mercúrio é o menor e o primeiro planeta do Sistema Solar, orbitando o Sol a cada 87,969 dias terrestres. A sua órbita tem a maior excentricidade e o seu eixo apresenta a menor inclinação em relação ao plano da órbita dentre todos os planetas do Sistema Solar.</p>
+  
+      <span id="fonte">Source: <a href="">Wikipedia</a></span>
+  
+  
+  
+  
+    </section>
+  
+  
+  
+  </main>
+  
+  
+  <section class="Dados">
+    <div class="dados" id="dado">
+      <div id="dado1">
+        <small>ROTATION TIME</small><br>
+        <span id="d1">58.2 DAYS</span>
+      </div>
+      <div id="dado2">
+        <small>REVOLUTION TIME</small><br>
+        <span id="d2">88 DAYS</span>
+      </div>
+      <div id="dado3">
+        <small>RADIUS</small><br>
+        <span id="d3">2.439,7 KM</span>
+      </div>
+      <div id="dado4">
+        <small>AVERAGE TEMP</small><br>
+        <span id="d4">427°C</span>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  <script>
+  First = document.getElementById('um');
+Second = document.getElementById('dois');
+Third = document.getElementById('tres');
+
+
+p = document.querySelector('p');
+image = document.querySelector('img');
+
+First.addEventListener('click', clicarUm);
+First.addEventListener('mouseout', sairUm)
+
+Second.addEventListener('click', clicarDois);
+Second.addEventListener('mouseout', sairDois)
+
+Third.addEventListener('click', clicarTres);
+Third.addEventListener('mouseout', sairTres)
+
+
+
+function clicarUm() {
+  var altura = 80
+  var margem = 2
+  First.style.background = '#6732D9';
+  document.getElementById('Terra').src = 'planetas/mercurio.png';
+  document.getElementById('Terra').style.width = altura+"%"
+  document.getElementById('Terra').style.margin = margem+"%"
+  document.getElementById('Terra').style.marginTop = 11+"%"
+  document.getElementById('Terra').style.marginBottom = 5+"%"
+  document.querySelector('section.texto').style.width = 39+"%"
+  p.innerText = 'Mercúrio é o menor e o primeiro planeta do Sistema Solar, orbitando o Sol a cada 87,969 dias terrestres. A sua órbita tem a maior excentricidade e o seu eixo apresenta a menor inclinação em relação ao plano da órbita dentre todos os planetas do Sistema Solar.'
+  
+  
+  
+  
+  var size = screen.width
+  
+  if (size < 481) {
+    H1 = document.getElementById('Titulo')
+    image = document.querySelector('img#Terra').src = 'planetas/mercurio.png'
+    text = document.querySelector('section.texto')
+    //fonte = document.querySelector('section span#fonte')
+  
+  
+    H1.style.marginLeft = 0 + "%";
+    H1.style.marginBottom = 0 + "%"
+  
+    image.style.marginTop = 27 + "%"
+    image.style.marginLeft = 11 + "%"
+    image.style.marginBottom = 15 + "%"
+    image.style.width = 80 + "%"
+    
+    text.style.width = 97 + "%"
+    text.style.color = "white"
+    text.style.margin = "auto"
+    text.style.textAlign = "center"
+    text.style.fontSize = 0.78 + "rem"
+    text.style.lineHeight = 1.3 + "rem"
+    text.style.letterSpacing = 0.02 + "rem"
+  
+    p.style.marginBottom = 1 + "rem"
+  
+  
+  }
+}
+function sairUm() {
+  First.style.background = 'none';
+}
+
+function clicarDois() {
+  var altura = 56.7
+  Second.style.background = '#6732D9';
+  document.getElementById('Terra').src = 'planetas/mercurio2.png'
+  document.getElementById('Terra').style.width = altura+"%";
+  //document.getElementById('Terra').style.margin = margem+"%"
+  document.getElementById('Terra').style.marginLeft = 17+"%"
+  document.getElementById('Terra').style.marginRight = 10+"%"
+  document.getElementById('Terra').style.marginTop = 10+"%"
+  //document.getElementById('Terra').style.justifyContent = 'space-around'
+  document.querySelector('section.texto').style.width = 32+"%"
+  p.innerText = 'A estrutura interna da Terra é constituída por três camadas: crosta terrestre - camada superficial sólida que envolve a Terra. Tem, em média, de 30 a 40 km de espessura, mas pode ser bem mais fina ou chegar a até 80km. Possui duas partes: forma de relevo e estruturas geológicas.'
+  
+  
+  
+  
+  
+  var size = screen.width
+  
+  if (size < 481) {
+    H1 = document.getElementById('Titulo')
+    image = document.querySelector('img#Terra')
+    text = document.querySelector('section.texto')
+    //fonte = document.querySelector('section span#fonte')
+    
+
+    H1.style.marginLeft = 4+"%";
+    H1.style.marginBottom = 6+"%"
+    
+    image.style.marginTop = 27+"%"
+    image.style.marginLeft = 23+"%"
+    image.style.marginBottom = 17+"%"
+    image.style.width = 56+"%"
+    
+    text.style.width = 97+"%"
+    text.style.color = "white"
+    text.style.margin = "auto"
+    text.style.textAlign = "center"
+    text.style.fontSize = 0.78+"rem"
+    text.style.lineHeight = 1.3+"rem"
+    text.style.letterSpacing = 0.02+"rem"
+
+    p.style.marginBottom = 1+"rem"
+    
+  
+  }
+}
+function sairDois() {
+  Second.style.background = 'none';
+}
+
+function clicarTres() {
+  var altura = 80
+  var margem = 2
+  Third.style.background = '#6732D9';
+  document.getElementById('Terra').src = 'planetas/mercurio.png'
+  document.getElementById('Terra').style.width = altura+"%"
+  document.getElementById('Terra').style.margin = margem+"%"
+  document.getElementById('Terra').style.marginTop = 11+"%"
+  document.getElementById('Terra').style.marginBottom = 5+"%"
+  document.querySelector('section.texto').style.width = 39+"%"
+  p.innerText = 'As estruturas geológicas representam as formações rochosas e as distintas gêneses do relevo terrestre. São subdivididas em crátons, bacias sedimentares e dobramentos modernos. Também chamadas de províncias geológicas – são as formações rochosas e estruturais que compõem a litosfera terrestre.'
+  
+  
+  
+  var size = screen.width
+  
+  if (size < 481) {
+    H1 = document.getElementById('Titulo')
+    image = document.querySelector('img#Terra')
+    text = document.querySelector('section.texto')
+    //fonte = document.querySelector('section span#fonte')
+  
+  
+    H1.style.marginLeft = 4 + "%";
+    H1.style.marginBottom = 6 + "%"
+  
+    image.style.marginTop = 22 + "%"
+    image.style.marginLeft = 11 + "%"
+    image.style.marginBottom = 10 + "%"
+    image.style.width = 80 + "%"
+  
+    text.style.width = 98+ "%"
+    text.style.color = "white"
+    text.style.margin = "auto"
+    text.style.textAlign = "center"
+    text.style.fontSize = 0.78 + "rem"
+    text.style.lineHeight = 1.3 + "rem"
+    text.style.letterSpacing = 0.02 + "rem"
+  
+    p.style.marginBottom = 1 + "rem"
+  
+  
+  }
+}
+function sairTres() {
+  Third.style.background = 'none';
+}
+
+
+  </script>
+</body>
+
+</html>
